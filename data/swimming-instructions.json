@@ -1,0 +1,28 @@
+{
+  "instructions": [
+    {
+      "title": "Basic Swimming Controls",
+      "description": "Use WASD or arrow keys to navigate your fish through the ocean. The faster you swim, the more energy you consume, so manage your stamina wisely."
+    },
+    {
+      "title": "Hunting Mechanics",
+      "description": "Approach smaller fish to automatically consume them. Larger prey requires multiple bites. Watch out for fish that are too big - they might fight back!"
+    },
+    {
+      "title": "Evolution Points",
+      "description": "Gain evolution points by eating prey and surviving. Use these points to upgrade your fish's abilities: speed, size, defense, and special powers."
+    },
+    {
+      "title": "Depth Management",
+      "description": "Deeper waters contain bigger prey but also more dangerous predators. Use the depth meter to find the perfect hunting zone for your current size."
+    },
+    {
+      "title": "Predator Avoidance",
+      "description": "When you see a larger predator, swim away quickly! Use coral reefs and seaweed for cover. Some predators can be outmaneuvered with quick direction changes."
+    },
+    {
+      "title": "Special Abilities",
+      "description": "Unlock special abilities as you evolve: electric shocks, camouflage, speed bursts, and more. Each ability has a cooldown period, so use them strategically."
+    }
+  ]
+}

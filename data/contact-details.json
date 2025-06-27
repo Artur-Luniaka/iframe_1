@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "title": "Email",
+      "value": "info@MobilePlayTrail.com",
+      "link": "mailto:info@MobilePlayTrail.com",
+      "icon": "📧"
+    },
+    {
+      "title": "Phone",
+      "value": "+61 2 9967 8812",
+      "link": "tel:+61299678812",
+      "icon": "📞"
+    },
+    {
+      "title": "Location",
+      "value": "25 Bouquet Street, South Brisbane QLD 4101, Australia",
+      "link": null,
+      "icon": "📍"
+    },
+    {
+      "title": "Support",
+      "value": "support@MobilePlayTrail.com",
+      "link": "mailto:support@MobilePlayTrail.com",
+      "icon": "🆘"
+    }
+  ]
+}
