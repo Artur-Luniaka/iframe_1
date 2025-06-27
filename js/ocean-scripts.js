@@ -384,13 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "" ||
-    window.location.pathname.endsWith("index.html")
-  ) {
-    showCookieBar();
-  }
+  showCookieBar();
 
   createScrollToTopButton();
 });
@@ -444,12 +438,13 @@ document.head.appendChild(bubbleAnimation);
 // Cookie Bar
 function showCookieBar() {
   if (localStorage.getItem("cookieAccepted") === "true") return;
-  if (
-    window.location.pathname !== "/" &&
-    window.location.pathname !== "" &&
-    window.location.pathname !== "/index.html"
-  )
-    return;
+  const path = window.location.pathname;
+  const isHome =
+    path === "/" ||
+    path === "" ||
+    path.endsWith("/") ||
+    path.endsWith("index.html");
+  if (!isHome) return;
 
   const bar = document.createElement("div");
   bar.className = "cookie-bar";
