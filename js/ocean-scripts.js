@@ -391,6 +391,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ) {
     showCookieBar();
   }
+
+  createScrollToTopButton();
 });
 
 // Create Bubble Effect
@@ -469,4 +471,21 @@ function showCookieBar() {
     bar.classList.remove("visible");
     setTimeout(() => bar.remove(), 400);
   };
+}
+
+// Scroll to Top Button
+function createScrollToTopButton() {
+  const btn = document.createElement("button");
+  btn.className = "scroll-to-top";
+  btn.title = "Back to top";
+  btn.innerHTML = '<span class="scroll-arrow">&#8679;</span>';
+  document.body.appendChild(btn);
+  btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  });
 }
