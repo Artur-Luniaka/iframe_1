@@ -219,11 +219,7 @@ body {
 
 /* Hero Section - Background image, centering, Go to Swim button */
 .coral-hero {
-  background: linear-gradient(
-    135deg,
-    var(--abyss-primary) 0%,
-    var(--deep-blue) 100%
-  );
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   color: var(--bubble-white);
   padding: 60px 0;
   position: relative;
@@ -249,8 +245,8 @@ body {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(26, 58, 95, 0.7) 0%,
-    rgba(10, 20, 40, 0.7) 100%
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.7) 100%
   );
   z-index: 1;
   pointer-events: none;
@@ -308,6 +304,7 @@ body {
   background-clip: text;
   position: relative;
   z-index: 10;
+  line-height: 1.2;
 }
 
 .deep-description {
@@ -1660,9 +1657,9 @@ body {
   /* Swimming Academy */
   .academy-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .academy-visual {
@@ -3509,7 +3506,7 @@ body {
 
 /* Game Demo Section (vertical 9:16) */
 .game-demo-section {
-  padding: 0;
+  padding: 40px 0;
   background: linear-gradient(
     135deg,
     var(--abyss-primary) 0%,
